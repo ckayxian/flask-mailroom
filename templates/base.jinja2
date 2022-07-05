@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Mailroom</title>
+</head>
+<body>
+	<nav>
+        <a id="home" href="{{ url_for('all')}}">Home</a>
+        <a id="donation-creation" href="{{ url_for('create')}}">Donation Creation</a>
+		<a id="login" href="{{ url_for('login') }}">Login</a>
+    </nav>
+	<h1>Donations</h1>
+	<h2>{% block subtitle %} {% endblock subtitle %}</h2>
+	{% block content %} {% endblock content %}
+</body>
+</html>
